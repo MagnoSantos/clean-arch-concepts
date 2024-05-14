@@ -47,3 +47,7 @@ Este tipo de arquitetura tem maior aderência na implementação de softwares co
 Devido a ser uma arquitetura centrada no domínio, o Clean Architecture trabalha bem com DDD e no caso dos uses cases em geral também com a segregação CQRS (comando e leitura), onde seu acoplamento direcionado preza para que o núcleo não dependa de outras partes. 
 
 Pode trazer flexibilidade, pois trocas nas camadas externas não impactam a camada interna, sem contar que a camada mais externa pode conter componentes de infraestrutura atuando com baixo acoplamento e facilitando a troca se necessário. 
+
+## Referências
+
+[Clean Architecture](https://www.zup.com.br/blog/clean-architecture-arquitetura-limpa)
