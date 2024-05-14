@@ -50,4 +50,4 @@ Pode trazer flexibilidade, pois trocas nas camadas externas não impactam a cama
 
 ## Referências
 
-[Clean Architecture](https://www.zup.com.br/blog/clean-architecture-arquitetura-limpa)
+[Clean Arch](https://www.zup.com.br/blog/clean-architecture-arquitetura-limpa)
