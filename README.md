@@ -10,7 +10,10 @@ Clean Architecture foi primeiramente apresentado em *The Clean Code Blog* de Unc
 
 ## Mas o que é?
 
-Clean Architecture é uma arquitetura de software proposta por Robert Cecil Martin que tem por objetivo padronizar e organizar o código desenvolvido, favorecer sua reusabilidade, assim como independência tecnológica. Domain Centric Architectures: arquiteturas centradas no domínio Ao estudar Clean Architecture, em algum momento, depara-se com alguma outra arquitetura de design similar, que visa isolar o core da aplicação do mundo externo através do uso de camadas, o princípio de Separação de Responsabilidades (Separation of Concerns - SoC). Por exemplo: - Hexagonal Architecture (conhecido como Ports and Adapters) - Onion Architecture Ambos têm como ponto comum colocar o domínio no centro da arquitetura. Entender a infraestrutura por trás da Arquitetura Limpa
+Clean Architecture é uma arquitetura de software proposta por Robert Cecil Martin que tem por objetivo padronizar e organizar o código desenvolvido, favorecer sua reusabilidade, assim como independência tecnológica. Domain Centric Architectures: arquiteturas centradas no domínio Ao estudar Clean Architecture, em algum momento, depara-se com alguma outra arquitetura de design similar, que visa isolar o core da aplicação do mundo externo através do uso de camadas, o princípio de Separação de Responsabilidades (Separation of Concerns - SoC). Por exemplo:
+
+- Hexagonal Architecture (conhecido como Ports and Adapters) 
+- Onion Architecture Ambos têm como ponto comum colocar o domínio no centro da arquitetura. Entender a infraestrutura por trás da Arquitetura Limpa
 
 ![image](https://github.com/MagnoSantos/clean-arch-concepts/assets/20459937/5e3034de-31fd-433f-9d54-82ebf2208f7b)
 
@@ -19,6 +22,7 @@ Arquitetura de camadas (Layered Architecture), onde as setas esboçam a direçã
 ![image](https://github.com/MagnoSantos/clean-arch-concepts/assets/20459937/334cfb17-0d62-4bc1-9a1c-1cd8db585524)
  
 Uma vez que a organização do projeto tem de ser fácil de entender e principalmente acompanhar metodologias ágeis para ser factível a mudanças, conforme as necessidades encontradas no amadurecimento do software, o fluxo acima altera as dependências entre as camadas, a centralizar a camada de domínio com uma alteração na seta que liga a camada de domínio com a de acesso à base de dados. 
+
 Portanto, já temos uma vantagem da Clean Architecture em comparação com as arquiteturas tradicionais de três camadas, essencialmente poder definir os componentes de infraestrutura em um momento posterior, assim como removê-los ou substituí-los com uma complexidade reduzida. Portanto, projetar aplicativos com menor acoplamento e independentes de detalhes técnicos de implementação, como banco de dados e estruturas. Clean Architecture: mais que camadas - Domínio: contém toda a lógica de negócio, o núcleo aqui deve ser responsável pela razão do software existir, ou seja, o domínio entrega a identidade do seu aplicativo. Alterações aqui podem, portanto, modificar a essência do software. - Infrastructure: responsável por identificar como o software se comunica com o mundo externo, por exemplo, a abrir a comunicação a humanos, através de uma interface visual, ou comunicação a um banco de dados, filas e até mesmo integração com outras APIs. 
 
 ![image](https://github.com/MagnoSantos/clean-arch-concepts/assets/20459937/092642bb-2eb2-406d-8285-6abd2b76366a)
@@ -41,4 +45,5 @@ Este tipo de arquitetura tem maior aderência na implementação de softwares co
 ## Vantagens 
 
 Devido a ser uma arquitetura centrada no domínio, o Clean Architecture trabalha bem com DDD e no caso dos uses cases em geral também com a segregação CQRS (comando e leitura), onde seu acoplamento direcionado preza para que o núcleo não dependa de outras partes. 
-Pode trazer flexibilidade, pois trocas nas camadas externas não impactam a camada interna, sem contar que a camada mais externa pode con
+
+Pode trazer flexibilidade, pois trocas nas camadas externas não impactam a camada interna, sem contar que a camada mais externa pode conter componentes de infraestrutura atuando com baixo acoplamento e facilitando a troca se necessário. 
